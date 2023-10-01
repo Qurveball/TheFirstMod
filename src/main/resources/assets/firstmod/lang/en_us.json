@@ -3,6 +3,10 @@
   "item.firstmod.raw_ruby": "Raw Ruby",
   "item.firstmod.raw_adamantine": "Raw Adamantine",
   "item.firstmod.adamantine": "Adamantine Ingot",
+  "item.firstmod.wine": "Wine",
+  "item.firstmod.vodka": "Vodka",
+  "item.firstmod.mead": "Mead",
+  "item.firstmod.beer": "Beer",
 
   "itemgroup.ruby":"First Mod"
 }
