@@ -8,7 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.qurveball.firstmod.FirstMod;
-import net.qurveball.firstmod.item.custom.ModItems;
+
 
 public class ModItemGroups {
 
