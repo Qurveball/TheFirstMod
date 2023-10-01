@@ -1,6 +1,7 @@
-package net.qurveball.firstmod.item.custom;
+package net.qurveball.firstmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -8,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.qurveball.firstmod.FirstMod;
+import net.qurveball.firstmod.potion.ModPotions;
 
 
 public class ModItemGroups {
@@ -20,10 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.ADAMANTINE);
                         entries.add(ModItems.RAW_ADAMANTINE);
-                        entries.add(ModItems.WINE);
-                        entries.add(ModItems.VODKA);
-                        entries.add(ModItems.BEER);
-                        entries.add(ModItems.MEAD);
+
 
 
                     }).build());
