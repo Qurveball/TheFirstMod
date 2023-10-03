@@ -21,5 +21,7 @@
   "item.firstmod.mead": "Mead",
   "item.firstmod.beer": "Beer",
 
-  "itemgroup.ruby":"First Mod"
+  "itemgroup.ruby":"First Mod",
+
+  "item.firstmod.gnome_spawn_egg": "Gnome Spawn Egg"
 }

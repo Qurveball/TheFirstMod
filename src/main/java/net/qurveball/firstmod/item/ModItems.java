@@ -22,20 +22,11 @@ public class ModItems {
 
 
 
-
- //   private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
- //       entries.add(RUBY);
- //       entries.add(RAW_RUBY);
- //       entries.add(ADAMANTINE);
- //       entries.add(RAW_ADAMANTINE);
-
-// }
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FirstMod.MOD_ID, name), item);
     }
     public static void registerModItems() {
         FirstMod.LOGGER.info("Registering Mod Items for " + FirstMod.MOD_ID);
-//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
    }
 
 
