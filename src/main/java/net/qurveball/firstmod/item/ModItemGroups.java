@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.ADAMANTINE);
                         entries.add(ModItems.RAW_ADAMANTINE);
+                        entries.add(ModItems.GNOME_SPAWN_EGG);
 
 
 

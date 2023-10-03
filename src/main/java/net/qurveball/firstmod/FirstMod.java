@@ -2,6 +2,9 @@ package net.qurveball.firstmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.qurveball.firstmod.entity.GnomeEntity;
+import net.qurveball.firstmod.entity.ModEntities;
 import net.qurveball.firstmod.item.ModItemGroups;
 import net.qurveball.firstmod.item.ModItems;
 import net.qurveball.firstmod.potion.ModPotions;
@@ -16,5 +19,6 @@ public class FirstMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModPotions.registerPotions();
 		ModPotions.registerPotionsRecipes();
+		FabricDefaultAttributeRegistry.register(ModEntities.GNOME, GnomeEntity.setAttributes());
 	}
 }

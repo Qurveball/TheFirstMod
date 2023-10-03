@@ -11,4 +11,4 @@ package net.qurveball.firstmod.item;
    // public static final FoodComponent MEAD = new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0), 1).build();
    // public static final FoodComponent BEER = new FoodComponent.Builder().alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 0), 1).build();
 
-}
+//}
