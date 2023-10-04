@@ -39,11 +39,13 @@ public class GnomeRenderer extends DynamicGeoEntityRenderer<GnomeEntity> {
             @Nullable
             @Override
             protected ItemStack getArmorItemForBone(GeoBone bone, GnomeEntity animatable) {
+                // Return the items relevant to the bones being rendered for additional rendering
                 return switch (bone.getName()) {
                     case HELMET -> this.helmetStack;
                     default -> null;
                 };
             }
+            // Return the equipment slot relevant to the bone we're using
             @Override
             protected @NotNull EquipmentSlot getEquipmentSlotForBone(GeoBone bone, ItemStack stack, GnomeEntity animatable) {
                 return switch (bone.getName()) {
@@ -54,10 +56,7 @@ public class GnomeRenderer extends DynamicGeoEntityRenderer<GnomeEntity> {
                     default -> super.getEquipmentSlotForBone(bone, stack, animatable);
                 };
             }
-
-
             // Return the ModelPart responsible for the armor pieces we want to render
-
             @Override
             protected @NotNull ModelPart getModelPartForBone(GeoBone bone, EquipmentSlot slot, ItemStack stack, GnomeEntity animatable, BipedEntityModel<?> baseModel) {
                 return switch (bone.getName()) {
@@ -68,8 +67,9 @@ public class GnomeRenderer extends DynamicGeoEntityRenderer<GnomeEntity> {
                     default -> super.getModelPartForBone(bone, slot, stack, animatable, baseModel);
                 };
             }
-        });// Add some held item rendering
-        addRenderLayer(new BlockAndItemGeoLayer<>(this) {
+        });
+        // Add some held item rendering
+        addRenderLayer(new BlockAndItemGeoLayer<>(this) { // Add some held item rendering
             @Nullable
             @Override
             protected ItemStack getStackForBone(GeoBone bone, GnomeEntity animatable) {
@@ -91,9 +91,7 @@ public class GnomeRenderer extends DynamicGeoEntityRenderer<GnomeEntity> {
                     default -> ModelTransformationMode.NONE;
                 };
             }
-
             // Do some quick render modifications depending on what the item is
-
             @Override
             protected void renderStackForBone(MatrixStack poseStack, GeoBone bone, ItemStack stack, GnomeEntity animatable, VertexConsumerProvider bufferSource, float partialTick, int packedLight, int packedOverlay) {
                 if (stack == GnomeRenderer.this.mainHandItem) {
@@ -115,6 +113,7 @@ public class GnomeRenderer extends DynamicGeoEntityRenderer<GnomeEntity> {
             }
         });
     }
+    //prerender our items
     @Override
     public void preRender(MatrixStack poseStack, GnomeEntity animatable, BakedGeoModel model, VertexConsumerProvider bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
         super.preRender(poseStack, animatable, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);

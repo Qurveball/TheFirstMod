@@ -34,7 +34,7 @@ public class GnomeModel extends GeoModel<GnomeEntity> {
 
         if (head != null) {
             EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
-            head.setRotX((entityData.headPitch() * (MathHelper.RADIANS_PER_DEGREE)));
+            head.setRotX((entityData.headPitch() * MathHelper.RADIANS_PER_DEGREE));
             head.setRotY(entityData.netHeadYaw() * MathHelper.RADIANS_PER_DEGREE);
         }
     }
