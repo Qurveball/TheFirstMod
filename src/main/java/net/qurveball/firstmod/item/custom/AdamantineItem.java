@@ -16,7 +16,6 @@ public class AdamantineItem extends Item {
                 .fireproof()
         );
     }
-
     @Override
     public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
 
