@@ -21,4 +21,15 @@ public class FirstMod implements ModInitializer {
 		ModPotions.registerPotionsRecipes();
 		FabricDefaultAttributeRegistry.register(ModEntities.GNOME, GnomeEntity.setAttributes());
 	}
+
+	//TODO
+	//Make the Gnome a vanilla entity
+	//Make a 3 custom hats for the Gnome and have him wear it
+	//Edit AI so the gnome can can drink alcohol
+	//
+	//
+	//
+	//
+	//
+	//
 }

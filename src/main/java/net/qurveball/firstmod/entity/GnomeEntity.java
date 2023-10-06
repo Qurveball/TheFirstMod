@@ -15,6 +15,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
+import net.qurveball.firstmod.item.ModItems;
 import software.bernie.geckolib.GeckoLib;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -49,7 +50,7 @@ public class GnomeEntity extends PathAwareEntity implements GeoEntity {
         this.goalSelector.add(3,new LookAtEntityGoal(this, PlayerEntity.class, 12.0f));
         this.goalSelector.add(3,new WanderAroundGoal(this, 0.6f));
         this.goalSelector.add(2, new TemptGoal(this, 1, Ingredient.ofItems(Items.COOKIE), false));
-        this.goalSelector.add(2, new HoldInHandsGoal<>(this, new ItemStack(Items.COOKIE), null, gnome -> this.getWorld().isDay()));
+        this.goalSelector.add(2, new HoldInHandsGoal<>(this, new ItemStack(ModItems.ADAMANTINE), null, gnome -> this.getWorld().isDay()));
     }
 
     @Override
@@ -81,7 +82,8 @@ public class GnomeEntity extends PathAwareEntity implements GeoEntity {
     private PlayState predicate(AnimationState tAnimationState) {
         if (tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.gnome.walk", Animation.LoopType.LOOP));
-        } else {
+        }
+        else {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.gnome.idle", Animation.LoopType.LOOP));
         }
         return PlayState.CONTINUE;

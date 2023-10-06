@@ -12,9 +12,10 @@ import net.minecraft.util.Identifier;
 import net.qurveball.firstmod.FirstMod;
 
 public class ModPotions {
+
     public static final Potion WINE =
             Registry.register(Registries.POTION, new Identifier(FirstMod.MOD_ID, "wine"),
-                new Potion( new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0)));
+                    new Potion( new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0)));
     public static final Potion BEER =
             Registry.register(Registries.POTION, new Identifier(FirstMod.MOD_ID, "beer"),
                     new Potion( new StatusEffectInstance(StatusEffects.NAUSEA, 200, 0)));
@@ -24,7 +25,6 @@ public class ModPotions {
     public static final Potion MEAD =
             Registry.register(Registries.POTION, new Identifier(FirstMod.MOD_ID, "mead"),
                     new Potion( new StatusEffectInstance(StatusEffects.NAUSEA, 400, 0)));
-
     public static void registerPotions() {
     }
 

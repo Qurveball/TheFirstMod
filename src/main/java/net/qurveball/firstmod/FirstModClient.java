@@ -10,6 +10,5 @@ public class FirstModClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         EntityRendererRegistry.register(ModEntities.GNOME, GnomeRenderer::new);
-
     }
 }

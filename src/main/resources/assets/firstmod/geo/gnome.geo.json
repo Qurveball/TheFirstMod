@@ -12,7 +12,12 @@
 			},
 			"bones": [
 				{
+					"name": "Gnome",
+					"pivot": [0, 0, 0]
+				},
+				{
 					"name": "right_arm",
+					"parent": "Gnome",
 					"pivot": [-3, 10, 0]
 				},
 				{
@@ -38,6 +43,7 @@
 				},
 				{
 					"name": "left_arm",
+					"parent": "Gnome",
 					"pivot": [3, 10, 0]
 				},
 				{
@@ -63,6 +69,7 @@
 				},
 				{
 					"name": "body",
+					"parent": "Gnome",
 					"pivot": [0, 7, 0],
 					"cubes": [
 						{"origin": [-3, 3, -2], "size": [6, 8, 4], "uv": [0, 0]},
@@ -71,6 +78,7 @@
 				},
 				{
 					"name": "head",
+					"parent": "Gnome",
 					"pivot": [0, 11.5, 0],
 					"cubes": [
 						{"origin": [-2, 11, -2], "size": [4, 3, 4], "uv": [12, 17]},
@@ -81,6 +89,7 @@
 				},
 				{
 					"name": "right_leg",
+					"parent": "Gnome",
 					"pivot": [-2, 3, 0],
 					"cubes": [
 						{"origin": [-2.75, 0, -1], "size": [2, 3, 2], "uv": [18, 25]},
@@ -89,6 +98,7 @@
 				},
 				{
 					"name": "left_leg",
+					"parent": "Gnome",
 					"pivot": [2, 3, 0],
 					"cubes": [
 						{"origin": [0.75, 0, -1], "size": [2, 3, 2], "uv": [21, 7]},
