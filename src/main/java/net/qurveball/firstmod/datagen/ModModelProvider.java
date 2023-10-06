@@ -6,6 +6,7 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.qurveball.firstmod.item.ModItems;
 
@@ -31,6 +32,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GNOME_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_BOOTS));
 
     }
 }

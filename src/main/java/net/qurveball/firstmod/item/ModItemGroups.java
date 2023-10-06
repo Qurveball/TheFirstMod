@@ -20,8 +20,13 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.ADAMANTINE);
                         entries.add(ModItems.RAW_ADAMANTINE);
+
                         entries.add(ModItems.GNOME_SPAWN_EGG);
 
+                        entries.add(ModItems.RUBY_HELMET);
+                        entries.add(ModItems.RUBY_CHESTPLATE);
+                        entries.add(ModItems.RUBY_LEGGINGS);
+                        entries.add(ModItems.RUBY_BOOTS);
 
 
 

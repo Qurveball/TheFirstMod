@@ -25,6 +25,7 @@ public class FirstMod implements ModInitializer {
 	//TODO
 	//Make the Gnome a vanilla entity
 	//Make a 3 custom hats for the Gnome and have him wear it
+	// Already made the straw hat, need to add it but have no help with geocko lib 
 	//Edit AI so the gnome can can drink alcohol
 	//
 	//
